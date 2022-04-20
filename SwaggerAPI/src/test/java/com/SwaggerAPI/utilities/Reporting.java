@@ -32,12 +32,12 @@ public class Reporting extends TestListenerAdapter {
 		extent=new ExtentReports();
 		
 		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("Host name","localhost");
+		extent.setSystemInfo("Host name","SwaggerAPI");
 		extent.setSystemInfo("Environment","QA");
 		extent.setSystemInfo("user","Ikhsan");
 		
-		htmlReporter.config().setDocumentTitle("Automation Experience Report"); // Tile of report
-		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
+		htmlReporter.config().setDocumentTitle("SwaggerAPI Report"); // Tile of report
+		htmlReporter.config().setReportName("API Automation Report"); // name of the report
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
 		htmlReporter.config().setTheme(Theme.DARK);
 	}
