@@ -1,0 +1,4 @@
+com/SwaggerAPI/utilities/BaseClass.class
+com/SwaggerAPI/testCases/PostUserTest.class
+com/SwaggerAPI/utilities/Reporting.class
+com/SwaggerAPI/utilities/ReadConfig.class
