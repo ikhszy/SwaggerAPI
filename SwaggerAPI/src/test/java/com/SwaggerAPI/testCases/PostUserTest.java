@@ -41,6 +41,8 @@ public class PostUserTest extends BaseClass {
 		if(username.equals(usb.userName) && !userId.isEmpty()) {
 			Assert.assertTrue(true);
 		} else {
+			System.out.println("FAILED LOG");
+			System.out.println(response.asPrettyString());
 			Assert.assertTrue(false);
 		}
 	}
@@ -67,6 +69,9 @@ public class PostUserTest extends BaseClass {
 		if(message.contains("UserName and Password required.") && code.equals("1200")) {
 			Assert.assertTrue(true);
 		} else {
+			System.out.println("FAILED LOG");
+			System.out.println("code: " + code);
+			System.out.println("message: " + message);
 			Assert.assertTrue(false);
 		}	
 	}
@@ -93,6 +98,9 @@ public class PostUserTest extends BaseClass {
 		if(message.contains("UserName and Password required.") && code.equals("1200")) {
 			Assert.assertTrue(true);
 		} else {
+			System.out.println("FAILED LOG");
+			System.out.println("code: " + code);
+			System.out.println("message: " + message);
 			Assert.assertTrue(false);
 		}	
 	}
