@@ -51,5 +51,19 @@ public class UserBody {
 				"}";
 		return userBody;
 	}
+	
+	public String emptyBody() {
+		String userBody = "{\n" + 
+				"}";
+		return userBody;
+	}
+	
+	public String userInvalidKeys() {
+		String userBody = "{\n" + 
+				"\"userNamezS\": \"cucokmeong@gmail.com\",\n" + 
+				"\"paword\": \"hey\"\n" + 
+				"}";
+		return userBody;
+	}
 
 }
